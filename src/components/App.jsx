@@ -5,7 +5,8 @@ function App() {
   const [items, setItems] = useState([]);
 
   function handleChange(event) {
-    const newValue = event.target;
+    S;
+    const newValue = event.target.value;
     setInputText(newValue);
   }
   function addItem() {
