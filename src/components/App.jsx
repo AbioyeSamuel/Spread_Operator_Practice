@@ -8,6 +8,11 @@ function App() {
     const newValue = event.target;
     setInputText(newValue);
   }
+  function addItem() {
+    setItems((previtems) => {
+      return [...previtems, inputText];
+    });
+  }
 
   return (
     <div className="container">
@@ -21,7 +26,7 @@ function App() {
           name="item"
           value={inputText}
         />
-        <button>
+        <button onClick={addItem}>
           <span>Add</span>
         </button>
       </div>
