@@ -12,6 +12,8 @@ function App() {
     setItems((previtems) => {
       return [...previtems, inputText];
     });
+
+    setInputText("");
   }
 
   return (
