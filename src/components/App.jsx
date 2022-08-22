@@ -10,15 +10,15 @@ function App() {
     setInputText(newValue);
   }
   function addItem() {
-    setItems((previtems) => {
-      return [...previtems, inputText];
+    setItems((prevItems) => {
+      return [...prevItems, inputText];
     });
 
     setInputText("");
   }
   function deleteItem(id) {
-    setItems((previtems) => {
-      return previtems.filter((item, index) => {
+    setItems((prevItems) => {
+      return prevItems.filter((item, index) => {
         return index !== id;
       });
     });
